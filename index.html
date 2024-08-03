@@ -13,23 +13,35 @@
             <h1 id="tituloContacto">Contacto:</h1>
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre">
-            <label for="apellido">Apellido</label>
+            <div id="errorNombre" class="error"></div>
+            <labe  for="apellido">Apellido</labe>
             <input type="text" id="apellido" name="apellido" placeholder="ingrese su apellido">
+            <div id="errorApellido" class="error"></div>
             <label for="email">Email</label>
             <input type="text" id="email" name="email" placeholder="ingrese su email" >
-            <label for="pasword">Pasword</label>
-            <input type="password" id="password" name="password" placeholder="ingrese su password">
-            <label for="repetirPassword">Repetir pasword</label>
-            <input type="password" id="repetirPassword" name="repetirPassword" placeholder="ingrese su password">
-            <label for="telefono">Telefono</label>
+            <div id="errorEmail" class="error"></div>
+            <label for="telefono">telefono</label>
             <input type="tel" id="telefono" name="telefono" placeholder="ingrese su telefono">
-            <button type="submit">Enviar</button>
+            <label for="tipoDeContacto">Tipo de Contacto</label>
+            <select id="tipoDeContacto" >     
+                <option >Soporte</option>   
+                <option >Ventas</option>                  
+            </select>
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" placeholder="ingrese el asunto">
+            <div id="errorAsunto" class="error"></div>
+            <label for="comentario">Descripcion</label>
+            <input type="text" id="comentario" name="comentario" placeholder="Descripcion">
+            <div id="errorComentario" class="error"></div>
+            <button id="enviar" type="submit">Enviar</button>
     
         </form>
     </div>
-    <div id="mensaje">
-        <button id="Volver" style="display: none;">Volver</button>
+  
+    <div id="mensaje"> 
     </div>
+    
+    <button  id="volver" style="display: none;" >Volver</button>
     <script src="main.js"></script>
 </body>
 </html>
